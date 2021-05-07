@@ -1,0 +1,7 @@
+#Nour ayman
+FROM ubuntu:latest
+RUN apt-get update 
+RUN apt-get install -y python3.9
+COPY . /Docker1
+WORKDIR /Docker1
+CMD python3.9 TheCode.py
